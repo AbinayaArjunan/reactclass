@@ -1,23 +1,29 @@
-import logo from './logo.svg';
 import './App.css';
 
 function App() {
+   
+  const course = "half stack application development";
+  const part1 = 'fundamentals of react';
+  const exercises1 = 10;
+  const part2 = 'using props to pass data';
+  const exercises2 = 7;
+  const part3 = 'state of a component';
+  const exercises3 = 14;
+
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div >
+      <h1>{course}</h1>
+      <ul>
+       
+        <li key={part1.toString()}>{part1}  {exercises1}</li>
+        <li key={part2.toString()} >{part2} {exercises2}</li>
+        <li key={part3.toString()} >{part3}  {exercises3}</li>
+
+      
+      
+      </ul>
+      
     </div>
   );
 }
